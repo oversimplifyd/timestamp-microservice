@@ -22,6 +22,9 @@ let moment = require('moment'),
 	input,
 	jsonOutput; 
 
+app.get('/', function(req, res){
+	res.send('Welcome to Timestamp Microservice'); 
+})
 
 app.get('/:time_param', function(req, res){
 	
