@@ -19,7 +19,7 @@ let moment = require('moment'),
 			'october',
 			'november',
 			'december' ],
-	port = process.env.PORT || 3080;
+	port = process.env.PORT || 3080,
 	input,
 	jsonOutput; 
 
