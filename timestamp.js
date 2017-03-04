@@ -19,6 +19,7 @@ let moment = require('moment'),
 			'october',
 			'november',
 			'december' ],
+	port = process.ENV.port || 8080;
 	input,
 	jsonOutput; 
 
@@ -60,4 +61,4 @@ app.get('/:time_param', function(req, res){
     res.json(jsonOutput);	
 })
 
-app.listen(8080);
+app.listen(port);
